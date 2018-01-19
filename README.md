@@ -4,10 +4,10 @@ Generates biased and unbiased random numbers (xorshift* algo)
 ## How to use
 1. Run `rand.py` using Python 2.7 
 2. The code is built to perform any of the following tasks
-    a. Generate an unbiased random number
-    b. Generate a biased random number with 73% preference to the second half
-    c. Generate a list of unbiased random numbers in a given range for accuracy check
-    d. Generate a list of biased random numbers in a given range for accuracy check
+    * Generate an unbiased random number
+    * Generate a biased random number with 73% preference to the second half
+    * Generate a list of unbiased random numbers in a given range for accuracy check
+    * Generate a list of biased random numbers in a given range for accuracy check
     
     
 ## How does it work
@@ -48,5 +48,15 @@ XorShift algorithm is a combination of XOR and SHIFT operations.
 1. The start and the end digits specified by user should be integers
 2. The bias though stay between 71% and 75% for produced results, in some rare cases, it may wander off to 65% or 80%(usually    when length of list<100)
 
+
+# Options avaialble
+![Biased Random Generator accuracy](https://github.com/vkumar1997/PseudoRandom-Number-Generator/blob/master/options.png)
+
+
+# Accuracy for biased Random Number Generator
 ![Biased Random Generator accuracy](https://github.com/vkumar1997/PseudoRandom-Number-Generator/blob/master/acun.png)
+
+
+# Accuracy for unbiased Random Number Generator
+![Biased Random Generator accuracy](https://github.com/vkumar1997/PseudoRandom-Number-Generator/blob/master/acbn.png)
 
