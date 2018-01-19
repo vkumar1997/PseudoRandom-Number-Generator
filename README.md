@@ -3,7 +3,7 @@ Generates biased and unbiased random numbers (xorshift* algo)
 
 ## How to use
 1. Run `rand.py` using Python 2.7 
-2. The code os built to perform any of the following tasks
+2. The code is built to perform any of the following tasks
     a. Generate an unbiased random number
     b. Generate a biased random number with 73% preference to the second half
     c. Generate a list of unbiased random numbers in a given range for accuracy check
@@ -15,7 +15,7 @@ Generates biased and unbiased random numbers (xorshift* algo)
 2.  Instead, we use the system time as a seed for a preudo random number generator (xorshift* algorithm) which generates           numbers at uniformly distributed randomess and fast speeds(described below).
 3.  Even though xorshift* is used to generate numbers with uniform distribution, to create a biased generator, weights were         used in the code
     a.  Generate a number from 1 to 10000 using the xorshift* algo and system time.
-    b.  Now, suppose we need to create a 73% bias in favor of upper half. So, if the number generated > 270,  use                     xorshift* algorithm to create a random number from just the upper range. Otherwise, it creates a number from the             lower range.
+    b.  Now, suppose we need to create a 73% bias in favor of upper half. So, if the number generated > 2700,  use                     xorshift* algorithm to create a random number from just the upper range. Otherwise, it creates a number from the             lower range.
     c.  This ensures that the accuracy is maintained for any size of the list and any range of numbers.
     
 
