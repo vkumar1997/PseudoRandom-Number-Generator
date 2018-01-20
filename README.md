@@ -20,7 +20,7 @@ Generates biased and unbiased random numbers (xorshift* algo)
     
 
 ## XorShift* Algorithm
-A detailed explanarion of the application can be found [here](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjGuvSF0uTYAhWKKY8KHSmaAJYQ0gIIMCgCMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FXorshift%23xorshift*&usg=AOvVaw39J8b0f91qCAuuZiK0VTSE)
+A detailed explanation of the algorithm can be found [here](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjGuvSF0uTYAhWKKY8KHSmaAJYQ0gIIMCgCMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FXorshift%23xorshift*&usg=AOvVaw39J8b0f91qCAuuZiK0VTSE)
 
 Xorshift generators are among the fastest non-cryptographically-secure random number generators, requiring very small code and state. Although they do not pass every statistical test without further refinement, this weakness is well-known and easily amended (as pointed out by Marsaglia in the original paper) by combining them with a non-linear function, resulting e.g. in a xorshift+ or xorshift* generator.
 
@@ -35,7 +35,7 @@ XorShift algorithm is a combination of XOR and SHIFT operations.
       3. seed = seed ^ seed >> c
    The tweaking of a,b,c and the shilft operators is important to create maximum randomness with long periods.
       
-* In xorshift*, we also use a modulo to combine it with a non linear operation (max size of 64 bit unsigned).
+* In xorshift*, we also use a modulo operation (max size of 64 bit unsigned) to combine it with a non linear operation and avoid patterns.
 * This gives a random number which can further be used as a seed for next iteration
     
 ## Advantages
