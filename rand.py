@@ -15,9 +15,6 @@ class TimeSeed():
 
 
 
-
-
-
 #Random class
 class Random():
     #----------------------------------------------------------XORSHIFT* Algorithm used to generate random numbers with equal distribution. The algorithm is famous and reliable and is described well in Wikipedia...
