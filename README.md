@@ -30,10 +30,10 @@ XorShift algorithm is a combination of XOR and SHIFT operations.
 * There are four parameters used in this algorithm and the randomness of the algorithm can be tweaked by these parameters       and the operators used along- seed, a, b, c
 * First we generate the seed using the system time which is a good and universal way to generate a new seed
 * The operations used in this algorithm (for 64 bit unsigned numbers) are as follows
-      1. seed  = seed ^ seed >> a
-      2. seed = seed ^ seed << b
-      3. seed = seed ^ seed >> c
-   The tweaking of a,b,c and the shilft operators is important to create maximum randomness with long periods.
+      * seed  = seed ^ seed >> a
+      * seed = seed ^ seed << b
+      * seed = seed ^ seed >> c
+* The tweaking of a,b,c and the shilft operators is important to create maximum randomness with long periods.
       
 * In xorshift*, we also use a modulo operation (max size of 64 bit unsigned) to combine it with a non linear operation and avoid patterns.
 * This gives a random number which can further be used as a seed for next iteration
