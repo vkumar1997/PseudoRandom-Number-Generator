@@ -46,7 +46,6 @@ XorShift algorithm is a combination of XOR and SHIFT operations.
 
 # Limitations
 1. The start and the end digits specified by user should be integers
-2. The bias though stays between 71% and 75% for produced results, in some rare cases, it may wander off to 65% or 80%        (usually when length of list<100)
 
 
 # Options avaialble
