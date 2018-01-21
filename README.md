@@ -29,9 +29,9 @@ A xorshift* generator takes a xorshift generator and applies an invertible multi
 XorShift algorithm is a combination of XOR and SHIFT operations.
 * There are four parameters used in this algorithm and the randomness of the algorithm can be tweaked by these parameters       and the operators used along- seed, a, b, c
 * First we generate the seed using the system time which is a good and universal way to generate a new seed
-* The operations used in this algorithm (for 64 bit unsigned numbers) are as follows
-      * seed  = seed ^ seed >> a
-      * seed = seed ^ seed << b
+* The operations used in this algorithm (for 64 bit unsigned numbers) are as follows<br/>
+      * seed  = seed ^ seed >> a<br/>
+      * seed = seed ^ seed << b<br/>
       * seed = seed ^ seed >> c
 * The tweaking of a,b,c and the shilft operators is important to create maximum randomness with long periods.
       
